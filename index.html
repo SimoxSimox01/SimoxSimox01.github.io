@@ -2,7 +2,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Eerste Website</title>
+    <style>
+        /* Hier kun je CSS-stijlen toevoegen voor opmaak */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+    
+    <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collapsible Sidebar Website</title>
     <style>
@@ -23,13 +49,15 @@
             text-align: center;
             text-decoration: none;
             font-size: 18px;
-            color: #fff;
+            color: #ffffff;
             display: block;
         }
 
         .sidebar a:hover {
             background-color: #555;
         }
+        
+       
 
         /* Button to open the sidebar */
         #open-sidebar {
@@ -66,6 +94,8 @@
     </style>
 </head>
 <body>
+
+    
     <div id="sidebar" class="sidebar">
         <a href="index.html">Home</a>
         <a href="SimoxSimox01.html">Over Mij</a>
@@ -73,19 +103,20 @@
         <a href="WERKT NIET">WERKT NIET</a>
     </div>
 
+
     <div id="open-sidebar">&#9776;</div>
 
-    <div class="content">
-        
-        <div class="headcontainer">
-            <h1>Simon</h1>
-            <p>Hier vind je alles over mij en mijn projecten</p>
-        </div>
-        <div class="container">
-            <h2>Over mij</h2>
-            <p>Ik ben Simon, ik kom uit klas 4H4 van het HVC uit Nieuw-Vennep. dit is mijn portfolio website met informatie over mijn Informatica projecten. Druk op de drie steepjes om meer te lezen en leren over mijn website!</p>
-        </div>
+    
     </div>
+    <header>
+        <h1>Mijn Eerste Website</h1>
+    </header>
+    <div class="container">
+        <h2>Welkom op mijn website!</h2>
+        <p>Dit is een eenvoudige HTML-website.</p>
+        <p>Je kunt hier allerlei informatie en inhoud toevoegen.</p>
+    </div>
+    
 
     <script>
         const sidebar = document.getElementById("sidebar");
