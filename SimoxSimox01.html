@@ -1,20 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>The First website from Simon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsible Sidebar Website</title>
+    <style>
+        /* Sidebar styles */
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #333;
+            transition: left 0.3s;
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            color: #fff;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: #555;
+        }
+
+        /* Button to open the sidebar */
+        #open-sidebar {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            font-size: 30px;
+            cursor: pointer;
+            color: #333;
+        }
+
+        /* Content styles */
+           border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .container {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Dit is de tweede pagina</h1>
-    
-    <h2>Mijn schooltijd</h2>
-    <p>hier moet nog tekst komen..</p>
-    
-    <h2>Mijn vrije tijd</h2>
-    <p>hier moet nog tekst komen.</p>
-    
-    <h2>Hoe ik tot dit punt ben gekomen</h2>
-    <p>hier moet nog tekst komen.</p>
+    <div id="sidebar" class="sidebar">
+        <a href="index.html">Home</a>
+        <a href="SimoxSimox01.html">Over mij</a>
+        <a href="MijnProjecten">Mijn projecten</a>
+        <a href="WERK NIET">WERK NIET</a>
+    </div>
 
-    <a href="index.html">Homepage</a>
+    <div id="open-sidebar">&#9776;</div>
+
+    <div class="content">
+        
+        <div class="headcontainer">
+            <h1>Over Mij</h1>
+            <p>Mijn leven</p>
+        </div>
+       
+    </div>
+
+    <script>
+        const sidebar = document.getElementById("sidebar");
+        const openSidebarButton = document.getElementById("open-sidebar");
+        const content = document.querySelector(".content");
+
+        openSidebarButton.addEventListener("click", () => {
+            if (sidebar.style.left === "0px") {
+                sidebar.style.left = "-250px";
+                content.style.marginLeft = "0";
+            } else {
+                sidebar.style.left = "0";
+                content.style.marginLeft = "250px";
+            }
+        });
+    </script>
 </body>
 </html>
+  .content {
+            margin-left: 0;
+            padding: 20px;
+            transition: margin-left 0.3s;
+        }
+
+        /* Container styles */
+        .headcontainer {
+            background-color: #a3a3a3;
+            padding: 20px;
+            margin-bottom: 20px;
+       
