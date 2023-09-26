@@ -1,44 +1,105 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simons Portfolio</title>
+    <title>Collapsible Sidebar Website</title>
+    <style>
+        /* Sidebar styles */
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #333;
+            transition: left 0.3s;
+            padding-top: 20px;
+        }
 
-   
+        .sidebar a {
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            color: #fff;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: #555;
+        }
+
+        /* Button to open the sidebar */
+        #open-sidebar {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            font-size: 30px;
+            cursor: pointer;
+            color: #333;
+        }
+
+        /* Content styles */
+        .content {
+            margin-left: 0;
+            padding: 20px;
+            transition: margin-left 0.3s;
+        }
+
+        /* Container styles */
+        .headcontainer {
+            background-color: #a3a3a3;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .container {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Simon</h1>
-        <nav>
-            <ul>
-                <li><a href="SimoxSimox01.html">Over Mij</a></li>
-                <li><a href="MijnProjecten">Mijn school projecten</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="sidebar" class="sidebar">
+        <a href="index.html">Home</a>
+        <a href="SimoxSimox01.html">Over mij</a>
+        <a href="MijnProjecten">Mijn projecten</a>
+        <a href="WERK NIET">WERK NIET</a>
+    </div>
 
-    <section id="over-mij">
-        <h2>Over Mij</h2>
-        <p>Voeg hier een korte beschrijving van jezelf toe.</p>
-    </section>
-    
+    <div id="open-sidebar">&#9776;</div>
 
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <!-- Voeg hier je portfolio-items toe (bijv. projecten, afbeeldingen, links, enz.) -->
-    </section>
+    <div class="content">
+        
+        <div class="headcontainer">
+            <h1>Simon</h1>
+            <p>Hier vind je alles over mij en mijn projecten</p>
+        </div>
+        <div class="container">
+            <h2>Over mij</h2>
+            <p>Ik ben Simon, ik kom uit klas 4H4 van het HVC uit Nieuw-Vennep. dit is mijn portfolio website met informatie over mijn Informatica projecten. Druk op de drie steepjes om meer te lezen en leren over mijn website!</p>
+        </div>
+    </div>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Neem contact met me op via <a href="simon.schoon@hvc.nl">simon.schoon@hvc.nl</a>.</p>
-    </section>
+    <script>
+        const sidebar = document.getElementById("sidebar");
+        const openSidebarButton = document.getElementById("open-sidebar");
+        const content = document.querySelector(".content");
 
-    <footer>
-        <p>&copy; 2023 Jouw Naam</p>
-    </footer>
-
+        openSidebarButton.addEventListener("click", () => {
+            if (sidebar.style.left === "0px") {
+                sidebar.style.left = "-250px";
+                content.style.marginLeft = "0";
+            } else {
+                sidebar.style.left = "0";
+                content.style.marginLeft = "250px";
+            }
+        });
+    </script>
 </body>
 </html>
