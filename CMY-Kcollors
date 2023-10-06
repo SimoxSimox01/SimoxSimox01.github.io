@@ -69,7 +69,7 @@
 </head>
 <body>
     <header>
-        <h1 style="color:white;">Computer Kleuren</h1>
+        <h1 style="color:white;">De computerkleur CMY-K</h1>
     </header>
     <nav>
         <a href="index.html">Home</a>
@@ -80,20 +80,26 @@
     </nav>
     <main>
         <section>
-            <h2>Wat doen computer kleuren?</h2>
-            <p>Kleuren spelen een cruciale rol in de wereld van computers en digitale media. Ze worden gebruikt om afbeeldingen, video's, websites en grafische gebruikersinterfaces tot leven te brengen. Het begrijpen van computerkleuren is belangrijk om visuele content effectief te creëren en weer te geven.</p>
+            <h2>Wat is CMY-K?</h2>
+            <p>CMYK staat voor Cyaan, Magenta, Geel en Zwart, en het is een kleurmodel dat veel wordt gebruikt in de druk- en grafische industrie. In tegenstelling tot het RGB-model, dat wordt gebruikt voor schermweergave, is CMYK speciaal ontworpen voor kleurendruk.</p>
         </section>
         <section>
-            <h2>Verschillende soorten kleuren</h2>
-            <p>In computers worden kleuren vaak gerepresenteerd met behulp van getalsystemen. Het meest gebruikte systeem is het RGB-model, wat staat voor Rood, Groen en Blauw. In dit model worden kleuren opgebouwd door verschillende hoeveelheden rood, groen en blauw licht te combineren.</p>
+            <h2>De vier kleurtinten</h2>
+            <p>In het CMYK-model worden kleuren gecreëerd door verschillende percentages cyaan, magenta, geel en zwarte inkt te mengen. Deze vier kleurinkten worden op papier aangebracht in verschillende hoeveelheden om een breed scala aan kleuren te produceren. Hier is een korte beschrijving van elk van de CMYK-componenten:</p>
+            <li>Cyaan (C): Cyaan is een blauwgroene kleur die wordt gebruikt om blauwtinten en groentinten te creëren.</li>
+
+<li>Magenta (M): Magenta is een roze-paarse kleur die wordt gebruikt om roodtinten en paarsachtige kleuren te maken.</li>
+
+<li>Geel (Y): Geel wordt gebruikt om gele en oranje kleuren te creëren.</li>
+
+<li>Zwart (K): Het zwarte component wordt toegevoegd om diepte en donkerte aan de kleuren toe te voegen. Het wordt ook gebruikt om grijstinten te maken.</li></p>
+        </section>
+        <section>
+            <h2>Waarvoor wordt het gebruikt?</h2>
+            <p>Het CMYK-model is van vitaal belang voor grafisch ontwerpers, drukkers en iedereen die betrokken is bij het maken van gedrukte materialen zoals brochures, posters, tijdschriften en verpakkingen. Bij het ontwerpen voor drukwerk moeten <a href="RGBcollors">RGB</a>-kleuren vaak worden omgezet in CMYK-kleuren om ervoor te zorgen dat de gewenste kleuren nauwkeurig worden weergegeven op papier.</p>
             
-              <p>Naast het RGB-model wordt ook het CMYK-model gebruikt in de grafische industrie, met de kleuren Cyaan, Magenta, Geel en Zwart. Dit model is speciaal ontworpen voor afdrukken en drukpersen. CMYK-kleuren worden gemengd door verschillende percentages van cyaan, magenta, geel en zwarte inkt te combineren om de gewenste kleur te produceren.</p>
-        </section>
-        <section>
             <h2>Conclusie</h2>
-            <p>Kortom, computerkleuren zijn een fundamenteel onderdeel van de digitale wereld, en het begrijpen van kleurmodellen zoals RGB en CMYK is essentieel voor grafisch ontwerpers, fotobewerkers en iedereen die met visuele content werkt.</p>
-            
-            <p>Kijk voor meer informatie bij <a href="RGBcollors">RGB</a> of bij <a href="CMY-Kcollors">CMY-K</a>.</p>
+            <p>Samengevat, het CMYK-kleurmodel is onmisbaar voor kleurendruk en speelt een cruciale rol in de grafische industrie om kleurgetrouwe afdrukken te produceren.</p>
             <!-- Voeg links en tekst toe voor meer informatie -->
         </section>
     </main>

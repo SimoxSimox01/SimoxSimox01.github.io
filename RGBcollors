@@ -69,7 +69,7 @@
 </head>
 <body>
     <header>
-        <h1 style="color:white;">Computer Kleuren</h1>
+        <h1 style="color:white;">De computerkleur RGB</h1>
     </header>
     <nav>
         <a href="index.html">Home</a>
@@ -80,20 +80,19 @@
     </nav>
     <main>
         <section>
-            <h2>Wat doen computer kleuren?</h2>
-            <p>Kleuren spelen een cruciale rol in de wereld van computers en digitale media. Ze worden gebruikt om afbeeldingen, video's, websites en grafische gebruikersinterfaces tot leven te brengen. Het begrijpen van computerkleuren is belangrijk om visuele content effectief te creëren en weer te geven.</p>
+            <h2>Wat is RGB?</h2>
+            <p>RGB, afkorting voor Rood, Groen en Blauw, is een kleurmodel dat veel wordt gebruikt in de wereld van computers en digitale displays. In dit model worden kleuren gecreëerd door verschillende hoeveelheden rood, groen en blauw licht te combineren. RGB is de basis voor kleurweergave op computermonitors, televisies, smartphones en andere schermen.</p>
+            <p>Elk van de drie kleurcomponenten in het RGB-model kan een waarde hebben tussen 0 en 255, waarbij 0 de afwezigheid van die kleur aangeeft en 255 de maximale intensiteit vertegenwoordigt. Door verschillende niveaus van rood, groen en blauw licht te mengen, kunnen een breed scala aan kleuren worden gecreëerd. Bijvoorbeeld, puur rood wordt weergegeven als (255, 0, 0), puur groen als (0, 255, 0), en puur blauw als (0, 0, 255).</p>
         </section>
         <section>
-            <h2>Verschillende soorten kleuren</h2>
-            <p>In computers worden kleuren vaak gerepresenteerd met behulp van getalsystemen. Het meest gebruikte systeem is het RGB-model, wat staat voor Rood, Groen en Blauw. In dit model worden kleuren opgebouwd door verschillende hoeveelheden rood, groen en blauw licht te combineren.</p>
-            
-              <p>Naast het RGB-model wordt ook het CMYK-model gebruikt in de grafische industrie, met de kleuren Cyaan, Magenta, Geel en Zwart. Dit model is speciaal ontworpen voor afdrukken en drukpersen. CMYK-kleuren worden gemengd door verschillende percentages van cyaan, magenta, geel en zwarte inkt te combineren om de gewenste kleur te produceren.</p>
+            <h2>Waarvoor wordt het gebruikt?</h2>
+            <p>Het RGB-model wordt vaak gebruikt bij het maken en bewerken van digitale afbeeldingen, foto's en video's. Grafische software zoals Adobe Photoshop maakt uitgebreid gebruik van RGB om kleuren te manipuleren en effecten toe te passen. Bovendien gebruiken webontwikkelaars RGB-waarden om kleuren te definiëren in HTML en CSS voor websites.</p>
         </section>
         <section>
             <h2>Conclusie</h2>
-            <p>Kortom, computerkleuren zijn een fundamenteel onderdeel van de digitale wereld, en het begrijpen van kleurmodellen zoals RGB en CMYK is essentieel voor grafisch ontwerpers, fotobewerkers en iedereen die met visuele content werkt.</p>
+            <p>Hoewel het RGB-model ideaal is voor schermweergave, is het belangrijk op te merken dat het niet altijd geschikt is voor afdrukken. Drukkers gebruiken meestal het <a href="CMY-Kcollors">CMY-K</a>-model voor afdrukwerk, omdat dat model beter geschikt is voor het mengen van inkt op papier.</p>
+            <p>In het kort is RGB een essentieel kleurmodel voor digitale displays en speelt het een centrale rol in het creëren van visuele content op computers en elektronische apparaten.</p>
             
-            <p>Kijk voor meer informatie bij <a href="RGBcollors">RGB</a> of bij <a href="CMY-Kcollors">CMY-K</a>.</p>
             <!-- Voeg links en tekst toe voor meer informatie -->
         </section>
     </main>
