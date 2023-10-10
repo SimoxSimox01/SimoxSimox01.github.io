@@ -4,110 +4,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collapsible Sidebar Website</title>
+    <title>Over mij SimoxSimox01</title>
     <style>
-        /* Sidebar styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        .container {
+            display: flex;
+        }
+
         .sidebar {
+            width: 0; /* Start met een gesloten sidebar */
             height: 100%;
-            width: 250px;
+            background-color: #222;
             position: fixed;
             top: 0;
-            left: -250px;
-            background-color: #333;
-            transition: left 0.3s;
-            padding-top: 20px;
+            left: 0;
+            overflow-x: hidden;
+            transition: 0.3s;
         }
 
-        .sidebar a {
-            padding: 15px;
-            text-align: center;
-            text-decoration: none;
-            font-size: 18px;
-            color: #fff;
-            display: block;
-        }
-
-        .sidebar a:hover {
-            background-color: #555;
-        }
-
-        /* Button to open the sidebar */
-        #open-sidebar {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            font-size: 30px;
-            cursor: pointer;
-            color: #ffffff;
-        }
-
-        a:link {
-            color:white
-        }
-
-        a:visited {
-
-            color:white
-        }
-
-
-        /* Content styles */
         .content {
-            margin-left: 0;
+            flex-grow: 1;
             padding: 20px;
-            transition: margin-left 0.3s;
         }
 
-        /* Container styles */
-        .headcontainer {
-            background-color: #a3a3a3;
-            padding: 20px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
-        .container {
-            background-color: #f0f0f0;
+
+        #open-btn {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            cursor: pointer;
+        }
+
+        #close-btn {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            cursor: pointer;
+        }
+
+        .sidebar-content {
             padding: 20px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            color: #fff;
+        }
+
+        .sidebar-content a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .content-container {
+            background-color: #f0f0f0; /* Achtergrondkleur van de container */
+            padding: 20px;
+            border: 1px solid #ddd; /* Rand rondom de container */
+            border-radius: 5px; /* Afgeronde hoeken voor de container */
         }
     </style>
 </head>
 <body>
-    <div id="sidebar" class="sidebar">
-        <a href="index.html">Home</a>
-        <a href="SimoxSimox01.html">Over Mij</a>
-        <a href="MijnProjecten.html">Mijn projecten</a>
-        <a href="WERKT NIET">WERKT NIET</a>
-    </div>
-
-    <div id="open-sidebar">&#9776;</div>
-
-    <div class="content">
-        
-        <div class="headcontainer">
-            <h1>Over mij</h1>
-            <pHi>Mijn leven</p>
+    <header>
+        <h1>Over mij</h1>
+    </header>
+    <div class="container">
+        <div class="sidebar" id="mySidebar">
+            <span id="close-btn" onclick="closeSidebar()">&times;</span>
+            <div class="sidebar-content">
+                <h2>Klik voor meer</h2>
+                <a href="index.html" onclick="closeSidebar()">Home</a>
+                <a href="SimoxSimox01.html" onclick="closeSidebar()">Over Mij</a>
+                <a href="MijnProjecten.html" onclick="closeSidebar()">Mijn Projecten</a>
+            </div>
         </div>
-        
+        <div class="content">
+            <button id="open-btn" onclick="toggleSidebar()">&#9776;</button>
+            <div class="content-container">
+                <h2>Ik ben Simon uit 4H4</h2>
+                <p>Ik kom uit Nieuw-Vennep en ga hier ook naar school, naar het HVC. Ik heb daar vijf dagen in de week les. Op dindagochtend heb ik van 8:20 tot 10:00 het vak informatica, ook heb ik nog een uur informatica op vrijdagmiddag van 14:10 tot 15:00. Voor dat vak maak ik nu ook deze website!</p>
+                <p>In mijn vrije tijd maak ik graag muziek, dan bespeel ik de drum of mijn saxofoon. Ik drum nu 8 jaar en saxofoon bespeel ik nu een half jaar. Verder zwem ik ook nog voor mijn lol. Ook game ik graag op mijn computer. Thuis maak ik ook vaak games voor het online platform Roblox, dat doe ik met de code LUA. In het weekend werk ik op zaterdag van 7 tot 3, verder zit ik ook vaak te leren of huiswerk te maken.
+                </p>
+                
+                <p>Druk op de drie streepjes liksbovenaan voor meer over mijn webpagina, of over mijn projecten.
+                </p>
+            </div>
+        </div>
     </div>
-
+    <div class="footer">
+        &copy; SimoxSimox01 2023
+    </div>
     <script>
-        const sidebar = document.getElementById("sidebar");
-        const openSidebarButton = document.getElementById("open-sidebar");
-        const content = document.querySelector(".content");
+        const sidebar = document.getElementById('mySidebar');
+        const openBtn = document.getElementById('open-btn');
 
-        openSidebarButton.addEventListener("click", () => {
-            if (sidebar.style.left === "0px") {
-                sidebar.style.left = "-250px";
-                content.style.marginLeft = "0";
+        function toggleSidebar() {
+            if (sidebar.style.width === '250px') {
+                sidebar.style.width = '0';
             } else {
-                sidebar.style.left = "0";
-                content.style.marginLeft = "250px";
+                sidebar.style.width = '250px';
             }
-        });
+        }
+
+        function closeSidebar() {
+            sidebar.style.width = '0';
+        }
     </script>
 </body>
 </html>
